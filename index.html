@@ -4,6 +4,16 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
     <head>
+    	<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55368174-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-55368174-1');
+		</script>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>zhenkondrat</title>
@@ -72,33 +82,7 @@
                     </div>
                 </div>
             </div>
-        </header>
-
-        <!-- Sections -->
-        <section id="about" class="sections3">
-            <div class="container">
-                <!-- Example row of columns -->
-                <div class="row">
-                    <div class="about-wrapper">
-
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="about-photo">
-                                <img src="assets/images/man.png" alt="About Photo" />
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="about-content text-left">
-                                <h1>Пункти</h1>
-                                
-                                <a href="circle/index.html" class="btn btn-default">Курси Circle</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>	
-            </div> <!-- /container -->       
-        </section>
+        </header>       
 
         <!-- Sections -->
         <section id="contact" class="contact">
@@ -111,22 +95,22 @@
                                 <div class="contact-area">
 
                                     <h4>Залиште повідомлення</h4>
-                                    <form>
+                                    <form method="post" action="mailto:zhenkondrat@gmail.com" enctype="text/plain">
 
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Ім'я*">
+                                            <input type="text" class="form-control" name="name" placeholder="Ім'я*">
                                         </div>
 
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Email*">
+                                            <input type="email" class="form-control" name="email" placeholder="Email*">
                                         </div>
 
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Тема*">
+                                            <input type="text" class="form-control" name="subject" placeholder="Тема*">
                                         </div>
 
                                         <div class="form-group">
-                                            <textarea rows="9" class="form-control" placeholder="Повідомлення"></textarea>
+                                            <textarea rows="9" class="form-control" name="message" placeholder="Повідомлення"></textarea>
                                         </div>
 
 
