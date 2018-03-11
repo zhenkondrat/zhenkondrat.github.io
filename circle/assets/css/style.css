@@ -617,14 +617,14 @@ input:-ms-input-placeholder {
 }
 .homepage-style{
     position: relative;
-    margin-top: 300px;
+    margin-top: 10px;
 }
 
 .homepage-style>a>img{
     position: absolute;
     z-index: 99;
-    margin: 0 35%;
-    top: -350px;
+    margin: 0 40%;
+    top: -120px;
 }
 
 
