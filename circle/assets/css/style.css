@@ -612,12 +612,21 @@ input:-ms-input-placeholder {
 /*Home Page Style*/
 
 #home{
-    background-color:#ffc038;
-    color:#fff;
+    background-color: #6ea2b5;
+    color: #4e555c;
 }
 .homepage-style{
-    padding-top:100px;
+    position: relative;
+    margin-top: 300px;
 }
+
+.homepage-style>a>img{
+    position: absolute;
+    z-index: 99;
+    margin: 0 35%;
+    top: -350px;
+}
+
 
 .homepage-style .top-arrow img{
     margin-top:20px;
@@ -625,11 +634,12 @@ input:-ms-input-placeholder {
 
 .homepage-style .unique-apps h2{
     font-size: 35px;
-    font-weight: 500;
+    font-weight: 700;
     text-transform:uppercase;
 }
 .homepage-style .slider-area{
-
+    border: 6px solid #4e555c;
+    border-radius: 5px
 }
 .carousel-indicators {
     bottom:-50px;
@@ -717,7 +727,6 @@ input:-ms-input-placeholder {
 /*our-features Area*/
 
 .features-content{
-    margin-bottom:50px;
     padding:10px 20px;
     transition:.5s;
     -moz-transition:.5s;
@@ -937,7 +946,21 @@ input:-ms-input-placeholder {
 .supports-content {
     margin-bottom:30px;
 }
+
+.spt-btn{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    color: #4e555c;
+}
+
+.spt-btn>span{
+    color: #33596d;
+    font-weight: bold;
+}
+
 .supports-content .spt-btn button{
+    margin:  0 0 0 10px;
     background: #ffc038;
     padding: 15px 30px;
     color: #464646;
@@ -953,6 +976,11 @@ input:-ms-input-placeholder {
 .supports-content .spt-btn button:hover{
     background: #464646;
     color:#fff;
+}
+
+.feature-wrapper{
+    display: flex;
+    justify-content: center;
 }
 
 /*Hire Us Area*/
@@ -1067,7 +1095,7 @@ input:-ms-input-placeholder {
     text-align: center;
     color: #fff;
     font-size: 30px;
-    background: #ffc038;
+    background: #3e7896;
     position: fixed;
     bottom: 30px;
     right: 50px;
@@ -1077,7 +1105,7 @@ input:-ms-input-placeholder {
     cursor:pointer;
 }
 .scrollup:hover{
-    background: #de9800;
+    background: #33596d;
     color: #fff;
     transform:scale(1.1);
 }	
@@ -1085,4 +1113,12 @@ input:-ms-input-placeholder {
 pre{
     background-color: transparent;
     padding: 0;
+}
+
+.small{
+    padding: 6px 12px!important;
+}
+
+.practic{
+    background-color: #00a2c7!important;
 }
